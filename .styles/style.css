@@ -1,0 +1,18 @@
+body {
+        font-family: "Inter", "Inter Placeholder", sans-serif;
+}
+p{
+    color: var(--token-1021654d-251a-4750-952b-de3f7005260e, rgb(136, 136, 136));
+    line-height: 1.5em;
+    letter-spacing: -0.7px;
+    font-weight: 500;
+    font-size: 20px;
+
+
+}
+a{
+    line-height: 1.5em;
+    letter-spacing: -0.7px;
+    font-weight: 500;
+    font-size: 18px;
+}
