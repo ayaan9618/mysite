@@ -1,6 +1,12 @@
 body {
         font-family: "Inter", "Inter Placeholder", sans-serif;
 }
+h1{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -2.1px;
+ 
+}
 p{
     color: var(--token-1021654d-251a-4750-952b-de3f7005260e, rgb(136, 136, 136));
     line-height: 1.5em;
@@ -11,6 +17,7 @@ p{
 
 }
 a{
+    color: blue;
     line-height: 1.5em;
     letter-spacing: -0.7px;
     font-weight: 500;
