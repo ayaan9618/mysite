@@ -1,5 +1,6 @@
 body {
         font-family: "Inter", "Inter Placeholder", sans-serif;
+        font-weight: 500;
 }
 h1{
     font-size: 30px;
@@ -8,10 +9,11 @@ h1{
  
 }
 p{
+    font-weight: 500;
     color: var(--token-1021654d-251a-4750-952b-de3f7005260e, rgb(136, 136, 136));
     line-height: 1.5em;
     letter-spacing: -0.7px;
-    font-weight: 500;
+    
     font-size: 20px;
 
 
