@@ -12,14 +12,7 @@
     <!-- Google Font: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles/style.css">
-    <script>
-    (function(){
-      var s=localStorage.getItem('theme');
-      var p=window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      var t=s||p; document.documentElement.setAttribute('data-theme', t);
-      window.toggleTheme=function(){ var c=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark'; document.documentElement.setAttribute('data-theme', c); localStorage.setItem('theme', c); };
-    })();
-    </script>
+    <script src="/scripts/theme.js"></script>
 </head>
 
 <body class="bg-white text-gray-600 text-[18px] leading-relaxed antialiased p-10 max-w-[600px] px-4 md:px-8 lg:px-12">
@@ -29,7 +22,7 @@
             <a href="index.html" class="text-blue-600 underline mr-6 ">home</a>
             <a href="blog.html" class="text-blue-600 underline mr-6 ">my blogs</a>
            <!-- <a href="#" class="text-blue-600 underline ">content i like</a> -->
-            <button onclick="toggleTheme()" class="ml-4 underline">toggle</button>
+            <button data-toggle-theme class="ml-4 underline">toggle</button>
         </nav>
 
         <!-- Main content -->
