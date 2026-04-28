@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ayaan</title>
+	<link rel="icon" href="/img/icon.jpg" type="image/jpeg">
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- Google Font: Inter -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="/styles/style.css">
+	<script>
+	(function(){
+	  var s=localStorage.getItem('theme');
+	  var p=window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+	  var t=s||p; document.documentElement.setAttribute('data-theme', t);
+	  window.toggleTheme=function(){ var c=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark'; document.documentElement.setAttribute('data-theme', c); localStorage.setItem('theme', c); };
+	})();
+	</script>
+</head>
+
+<body class="bg-white text-gray-600 text-[18px] leading-relaxed antialiased p-10 max-w-[600px] px-4 md:px-8 lg:px-12">
+	<div class="max-w-[600px]">
+		<!-- Navigation Links -->
+		<nav class="mb-10 text-[16px]">
+			<a href="/index.html" class="text-blue-600 underline mr-6 ">home</a>
+			<a href="/blog.html" class="text-blue-600 underline mr-6 ">my blogs</a>
+			<!-- <a href="#" class="text-blue-600 underline ">content i like</a> -->
+			<button onclick="toggleTheme()" class="ml-4 underline">toggle</button>
+		</nav>
+
+		<!-- Main content -->
+		<main class="max-w-3xl">
+			<h1 class="text-[36px] font-extrabold text-black">is programming dead</h1>
+			<p class="mb-6 text-[16px]">by ayaan.</p>
+
+			<p class="mb-6 italic font-semibold">reason: ai</p>
+
+			<p class="mb-6">
+				ai can write code, and ai can build end-to-end apps in minutes.
+				but ai can’t master programming because there is one thing ai can’t replace: the <em>wrapper of programming</em>.
+			</p>
+
+			<p class="mb-6">
+				programming is not just writing code. it is understanding how code takes input and gives output.
+			</p>
+
+			<p class="mb-6">
+				every programming language such as c, python, javascript, etc. goes through a compiler or interpreter and then executes binary code that the machine can understand.
+			</p>
+
+			<p class="mb-6">
+				this is a basic understanding taught in programming.
+			</p>
+
+			<p class="mb-6">
+				but there is one thing most people miss: every compiler or interpreter turns every code into another form before binary code.
+			</p>
+
+			<p class="mb-6">
+				that is where the wrapper idea comes in.
+			</p>
+
+			<h2 class="text-[26px] font-bold text-black mb-4">c wraps asm</h2>
+
+			<p class="mb-6">
+				in c programming, when you write code, the compiler first converts it into assembly language, not directly into binary language.
+			</p>
+
+			<p class="mb-6">
+				when we run the code, it passes through assembly-level instructions that are later turned into binary at the cpu level. that is not visible to us.
+			</p>
+
+			<h3 class="text-[20px] font-semibold text-black mb-3">example:</h3>
+			<pre class="mb-6 whitespace-pre-wrap font-mono text-[15px] leading-7"><code>#include &lt;stdio.h&gt;
+
+int main() {
+	printf("hello");
+	return 0;
+}</code></pre>
+
+			<p class="mb-6">
+				this code is not understood directly by the cpu.
+				it is first compiled, then lowered into assembly instructions, and then into machine-level binary.
+			</p>
+
+			<p class="mb-6 font-semibold italic">so, c wraps asm.</p>
+
+			<h2 class="text-[26px] font-bold text-black mb-4">python wraps c</h2>
+
+			<p class="mb-6">
+				python is different because it runs through a special program written in c or c++.
+			</p>
+
+			<p class="mb-6">
+				python uses the <em>cpython interpreter</em> that converts code into bytecode.
+				that cpython itself is written in c, and that is one reason python is slower than c.
+			</p>
+
+			<p class="mb-6">
+				so python has one more c wrapper inside it.
+			</p>
+
+			<h3 class="text-[20px] font-semibold text-black mb-3">example:</h3>
+			<pre class="mb-6 whitespace-pre-wrap font-mono text-[15px] leading-7"><code>print("Hello")</code></pre>
+
+			<p class="mb-6">
+				this goes through cpython and turns into bytecode.
+				that bytecode can then be executed by the runtime to run the program.
+			</p>
+
+			<p class="mb-6 font-semibold italic">so, python wraps c.</p>
+
+			<h2 class="text-[26px] font-bold text-black mb-4">javascript wraps c++</h2>
+
+			<p class="mb-6">
+				similarly, javascript uses the <em>v8 engine</em>, which is written in c++.
+			</p>
+
+			<h3 class="text-[20px] font-semibold text-black mb-3">example:</h3>
+			<pre class="mb-6 whitespace-pre-wrap font-mono text-[15px] leading-7"><code>console.log("Hello");</code></pre>
+
+			<p class="mb-6">
+				this code is processed by v8 and converted into bytecode or optimized machine code internally.
+			</p>
+
+			<p class="mb-6 font-semibold italic">so, javascript wraps c++.</p>
+
+
+
+			<p class="mb-6">
+				so, code in every programming language goes through another layer before reaching the binary that the machine executes, even if ai writes the code.
+			</p>
+
+			<p class="mb-6">
+				ai can write code too, but it cannot replace the understanding level of programming.
+			</p>
+
+			<p class="mb-6">
+				that is where programming is alive.
+			</p>
+
+			<p class="mb-6">
+				if you are a programmer and you know this, and you like how ai writes code, ai wrappers work, and ai tools help us, then you must learn the wrappers of programming languages too.
+			</p>
+
+			<ul class="mb-6 list-disc pl-6">
+				<li>c wraps asm</li>
+				<li>python wraps c</li>
+				<li>javascript wraps c++</li>
+				<li>and more</li>
+			</ul>
+
+			<p class="mb-12 font-semibold italic">
+				that is the wrapper of programming.
+			</p>
+		</main>
+	</div>
+</body>
+
+</html>
