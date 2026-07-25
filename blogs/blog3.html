@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ayaan</title>
+	<link rel="icon" href="/img/icon.jpg" type="image/jpeg">
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- Google Font: Inter -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="/styles/style.css">
+	<script>
+	(function(){
+	  var s=localStorage.getItem('theme');
+	  var p=window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+	  var t=s||p; document.documentElement.setAttribute('data-theme', t);
+	  window.toggleTheme=function(){ var c=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark'; document.documentElement.setAttribute('data-theme', c); localStorage.setItem('theme', c); };
+	})();
+	</script>
+</head>
+
+<body class="bg-white text-gray-600 text-[18px] leading-relaxed antialiased p-10 max-w-[600px] px-4 md:px-8 lg:px-12">
+	<div class="max-w-[600px]">
+		<!-- Navigation Links -->
+		<nav class="mb-10 text-[16px]">
+			<a href="/index.html" class="text-blue-600 underline mr-6 ">home</a>
+			<a href="/blog.html" class="text-blue-600 underline mr-6 ">my blogs</a>
+			<!-- <a href="#" class="text-blue-600 underline ">content i like</a> -->
+			<button onclick="toggleTheme()" class="ml-4 underline">toggle</button>
+		</nav>
+
+		<!-- Main content -->
+		<main class="max-w-3xl">
+	<h1 class="text-[36px] font-extrabold text-black">aws sells everything</h1>
+	<p class="mb-6 text-[16px]">by ayaan.</p>
+
+	<p class="mb-6">
+		Have you ever wondered how many services AWS actually sells?
+	</p>
+
+	<p class="mb-6">
+	 over 200+ services, it can feel like this:
+	</p>
+
+	<img src="/img/aws-meme1.jpg" alt="aws meme" class="mb-6 rounded-md max-w-full h-auto">
+
+	<p class="mb-6">
+		Initially, in 2006 launched AWS to provide core cloud services like VPS (virtual private servers) and cloud computing. However, today AWS sells every possible cloud service imaginable.
+	</p>
+
+	<p class="mb-6 italic font-semibold">
+		Reason, well, they are many reasons like
+	</p>
+
+	<h2 class="text-[26px] font-bold text-black mb-4">
+		AWS wants to offer everything
+	</h2>
+
+	<p class="mb-6">
+		AWS believes that every cloud service can be provided and aims to offer whatever is possible. Consequently, they identify all potential services and start selling them.
+	</p>
+
+	<p class="mb-6">
+		An interesting part of their strategy is taking open-source code for these services and rebranding them for sale; for example, RDS is similar to MySQL.
+	</p>
+
+	<h2 class="text-[26px] font-bold text-black mb-4">
+		AWS wants to be the solution to everyone's problems
+	</h2>
+
+	<p class="mb-6">
+		Imagine one person needs computing power, another needs a database, and someone else wants to run a website without thinking about servers.
+	</p>
+
+	<p class="mb-6">
+		AWS ensures that a solution exists for everyone's specific needs.
+	</p>
+
+	<p class="mb-6">
+		This is because every large problem eventually splits into smaller, more specific problems.
+	</p>
+
+	<p class="mb-6">
+		And every smaller problem requires its own specialized tool.
+	</p>
+
+	<h3 class="text-[20px] font-semibold text-black mb-3">
+		For example:
+	</h3>
+
+	<ul class="mb-6 list-disc pl-6">
+		<li>EC2 for computing</li>
+		<li>EFS for file storage</li>
+		<li>RDS for databases</li>
+		<li>Lambda for serverless computing</li>
+		<li>CloudFront for the front end</li>
+		<li>And so on.</li>
+	</ul>
+
+	<p class="mb-6">
+		Suddenly, a single cloud platform transforms into 200+ services.
+	</p>
+
+	<p class="mb-6">
+		In the end, AWS has become a one-stop shop, much like an Indian Kirana store where you can find everything you need.
+	</p>
+    <p class="mb-12 font-semibold italic">
+		That create confusing to developer to what to host in which services.
+	</p>
+    
+	<img src="/img/aws-meme2.webp" alt="confused developer meme" class="mb-6 rounded-md max-w-full h-auto">
+
+	
+</main>
+	</div>
+</body>
+
+</html>
